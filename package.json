@@ -1,0 +1,30 @@
+{
+    "name": "bbcode",
+    "displayName": "Bulletin Board Code",
+    "description": "Support for the BBCode markup language.",
+    "version": "0.0.1",
+    "publisher": "tabuu",
+    "author": {
+        "name": "Rick van Sloten",
+        "email": "rickvansloten@protonmail.com"
+    },
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "bbcode",
+            "aliases": ["Bulletin Board Code", "BBCode", "bbcode"],
+            "extensions": ["bbcode","bbc", "bb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "bbcode",
+            "scopeName": "text.basic.bbcode",
+            "path": "./syntaxes/bbcode.tmLanguage.json"
+        }]
+    }
+}
