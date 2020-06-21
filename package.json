@@ -2,11 +2,11 @@
     "name": "bbcode",
     "displayName": "Bulletin Board Code",
     "description": "Support for the BBCode markup language.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/Tabuu/Bulletin-Board-Code-TextMate.git"
-     },
+    },
     "publisher": "rickvansloten",
     "author": {
         "name": "Rick van Sloten",
@@ -19,16 +19,28 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "bbcode",
-            "aliases": ["Bulletin Board Code", "BBCode", "bbcode"],
-            "extensions": ["bbcode","bbc", "bb"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "bbcode",
-            "scopeName": "text.basic.bbcode",
-            "path": "./syntaxes/bbcode.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "bbcode",
+                "aliases": [
+                    "Bulletin Board Code",
+                    "BBCode",
+                    "bbcode"
+                ],
+                "extensions": [
+                    "bbcode",
+                    "bbc",
+                    "bb"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "bbcode",
+                "scopeName": "text.basic.bbcode",
+                "path": "./syntaxes/bbcode.tmLanguage.json"
+            }
+        ]
     }
 }
