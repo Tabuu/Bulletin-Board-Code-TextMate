@@ -122,10 +122,10 @@
 							"name": "punctuation.separator.key-value.bbcode"
 						}
 					},
-					"end": "(?<=[^\\s=])(?!\\s*=)|(?=\/?>)",
+					"end": "(?<=[^\\s=])(?!\\s*=)|(?=\\/?])",
 					"patterns": [
                         {
-                            "match": "([^\\s\"'=\\[\\]`/]|/(?!\\]))+",
+                            "match": "([^\\s\"'\\[\\]`\\/]|\\/(?!\\]))+",
                             "name": "string.unquoted.bbcode"
                         },
                         {
@@ -157,11 +157,7 @@
                                 }
                             },
                             "name": "string.quoted.single.bbcode"
-                        },
-                        {
-                            "match": "=",
-                            "name": "invalid.illegal.unexpected-equals-sign.bbcode"
-						}
+                        }
 					]
 				}
 			]
